@@ -1,0 +1,45 @@
+
+/*Estilo do tipo container criado para a página inicial*/
+.container {
+    width: 13%; /* largura da div em %*/
+    height: 700px; /* altura da div*/
+    background-color: seagreen; /* cor de fundo */
+    border: 5px solid black; /* borda */
+    border-radius: 10px; /* bordas arredondadas */
+    padding: 20px; /* espaço interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* sombra */
+    text-align: center; /* alinhamento do texto */
+    font-family: Arial, sans-serif; /* fonte do texto */
+    color: white /* cor do texto */
+}
+
+/*Estilo para personalizar os links*/
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: black /* Muda a cor do texto clicável*/
+}
+
+/*Estilo para personalizar o div aonde se encontra o titulo principal do site*/
+div.first {
+    width: 97%; /* largura da div */
+    height: 5%; /* altura da div */
+    background-color: seagreen; /* cor de fundo */
+    border: 7px solid black; /* borda */
+    border-radius: 10px; /* bordas arredondadas */
+    padding: 10px; /* espaço interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* sombra */
+    text-align: center; /* alinhamento do texto */
+    font-family: Times New Roman; /* fonte do texto */
+    color: white; /* cor do texto */
+    font-size: 180%; /* tamanho do texto */
+}
+
+/*Estilo para personalizar um tipo de div*/
+div.second {
+    background-color: beige; /* cor de fundo */
+    border: 5px solid black; /* borda sólida */
+    border-radius: 10px; /* bordas arredondadas */
+    padding: 5px; /* espaço interno */
+    margin-bottom: 15px; /* espaço entre as divs filhas */
+    color: black /* cor do texto */
+}
