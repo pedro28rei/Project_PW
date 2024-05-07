@@ -16,7 +16,8 @@
 /*Estilo para personalizar os links*/
 a {
     text-decoration: none; /* Remove o sublinhado */
-    color: black /* Muda a cor do texto clicável*/
+    color: black; /* Muda a cor do texto clicável*/
+    cursor: pointer; 
 }
 
 /*Estilo para personalizar o div aonde se encontra o titulo principal do site*/
@@ -80,5 +81,5 @@ img {
 
    /* Estilos para personalizar o body todo da página*/
    body {
-    background-color: whitesmoke; /* Define a cor de fundo para todo o corpo */
+    background-color: #6eab99;;
 }
