@@ -2,19 +2,23 @@ body {
     background-color: #6eab99;;
 }
 
-.icon {
+.iconDiv {
     text-align: center;
+    margin-bottom: 1%;
+}
+
+.icon:hover {
+    transform: scale(1.1);
 }
 
 .main {
-    
-    width: 40%;
+    width: 25%;
     background-color: white;
     text-align: center;
     margin: 0 auto;
-    border-radius: 10px;
-    border: 4px solid black;
-    font-size: 140%;
+    border-radius: 12px;
+    border: 5px solid black;
+    font-size: 150%;
 }
 
 label {
@@ -25,28 +29,40 @@ label {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    color:  #ffffff;
+    color: #ffffff;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 3%;
+}
+
+.textBox{
+    text-align: center;
+    border-width: 3px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding: 8px;
+}
+
+div.create {
+    text-align: center;
 }
 
 .button-container {
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    margin-top: 20px; /* Adiciona espaço na parte superior para afastar o botão do topo */
+    text-align: center;
+    margin-top: 1%;
 }
 
 button {
-    padding: 10px 20px; /* Adiciona preenchimento interno */
-    font-size: 150%; /* Define o tamanho da fonte */
-    border: none; /* Remove a borda padrão */
+    padding: 10px 20px;
+    font-size: 150%;
+    border: none;
     background-color: #000000; 
     color: #fff; 
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    border-radius: 5px;
+    cursor: pointer;
     text-align: center;
     margin: 0 auto;
 }
 
 button:hover {
-    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #0056b3;
 }
