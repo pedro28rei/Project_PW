@@ -7,50 +7,64 @@
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/home.css">
+    
+    <!-- !!! TIRAR QUANDO PASSAR PARA ANGULAR -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/JS/home.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="w-100 top-image" id="div-top-image">
-        <div class="language-option"><img src="/images/flags/us.svg" onclick="alert('teste')"></div>
-        <table class="top-image-table">
-          <tr></tr>
-          <tr>
-            <td class="top-image-text">
-              <h1 class="top-image-text-title">Title</h1>
-              <p class="top-image-text-description">Description</p>
-            </td>
-          </tr>
-          <tr></tr>
-        </table>
+        <div class="language-option"><img src="/images/flags/us.svg" title="Change Language / Alterar Idioma" id="languageFlag" onclick="changeLanguage()"></div>
+        <div class="row">
+          <div class="top-image-text">
+            <h1>Title</h1>
+            <h2>Subtitle</h2>
+          </div>
+        </div>
     </div>
 
-    <div class="container content" id="content" >
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt sapien eget risus rutrum, eget ornare turpis auctor. In euismod sed magna vel semper. Suspendisse vulputate vehicula odio, eget egestas neque posuere vel. Praesent a tellus tristique, sagittis sapien a, eleifend risus. Duis enim nulla, porttitor nec orci eu, viverra vulputate risus. Phasellus nec ante interdum, scelerisque tellus quis, auctor tellus. Aenean finibus scelerisque congue. Pellentesque molestie eros vitae egestas vulputate. In et tristique metus. In non est ac nunc tristique ornare non at ex. Nam sed felis ut purus facilisis placerat eget semper tortor. Curabitur tristique in est ut commodo. Vivamus in ante rutrum, varius urna ac, tempor augue. Quisque luctus vehicula mattis.
-        </p>
-        <p>
-            Vivamus eu faucibus ligula. Curabitur non neque at purus rhoncus tempus. Sed velit ligula, tempor eu vestibulum et, finibus at nisi. Phasellus efficitur rhoncus fringilla. Nunc pulvinar feugiat scelerisque. Mauris mollis nunc non vulputate suscipit. Mauris eget facilisis odio, a tincidunt leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        </p>
-        <p>
-            Sed non aliquam augue, non dictum nisl. Suspendisse rutrum fermentum mauris sed pretium. Nunc lobortis, mi sed accumsan sagittis, mauris odio tincidunt quam, eget aliquet neque mauris eu enim. Fusce ultrices hendrerit consequat. Fusce congue ligula non posuere pharetra. Maecenas gravida nisl maximus, luctus lorem eget, efficitur nisl. Quisque volutpat porttitor lectus, sed sodales metus. Proin lobortis, ex quis suscipit venenatis, dolor est vestibulum nulla, vel facilisis diam quam at lacus. Nullam urna nulla, cursus a leo sed, vehicula porta elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse malesuada nibh urna, ullamcorper molestie nunc interdum eget. Nunc varius viverra erat a vestibulum. Sed molestie finibus lacinia. Donec ac suscipit ante. Proin sed diam imperdiet nisi commodo consequat a ut tellus. Nulla accumsan eget enim quis egestas.
-        </p>
-        <p>
-            Ut justo felis, imperdiet in arcu non, vestibulum pellentesque ex. Ut hendrerit laoreet mi nec luctus. Vivamus faucibus sed tortor dictum auctor. Sed tempor magna id enim commodo, ut fermentum elit iaculis. Nunc in purus sit amet eros consequat blandit ut vel odio. Nullam vel malesuada libero. Sed accumsan, nunc in vehicula vestibulum, neque nulla sodales dolor, tincidunt placerat justo tellus et orci. Proin dapibus commodo mollis. In ut commodo orci. Nunc vestibulum a nunc non rhoncus. Donec id iaculis augue. Mauris porta, erat vel ultrices eleifend, ex leo euismod diam, vel tristique orci tellus sed massa.
-        </p>
-        <p>
-            Cras dolor nibh, cursus quis accumsan vel, congue eget augue. Curabitur eget ullamcorper lectus. Integer vel libero vehicula tellus accumsan pharetra ac suscipit velit. Nam sit amet venenatis velit. Vestibulum feugiat auctor tellus, sed maximus nulla ornare eget. Sed sed molestie ligula. Nulla lobortis neque et nulla dapibus egestas. Nullam laoreet, mi sed molestie egestas, massa massa cursus lectus, eu accumsan felis quam tristique sem. Integer volutpat lectus eget eros gravida ultrices. In hac habitasse platea dictumst. 
-        </p>
+    <div class="container p-1 content" id="content" >        
+        <div class="row museum-row">
+          <div class="col-12">
+            <h2 class="text-center">Museums</h2>
+          </div>
+        </div>
+
+        <div class="row museum-row">
+          <div class="col-3 museum-column pointer" onclick="openMuseum(1)">
+            <img src="/images/museuBG.png" alt="Example 1">
+            <div class="overlay">Example 1</div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3 museum-column pointer" onclick="openMuseum(2)">
+            <img src="/images/salle.webp" alt="Example 2">
+            <div class="overlay">Example 2</div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3 museum-column pointer" onclick="openMuseum(3)">
+            <img src="/images/museuLouvre2.jpg" alt="Example 3">
+            <div class="overlay">Example 3</div>
+          </div>
+        </div>
+        <div class="row museum-row">
+          <div class="col-3 museum-column pointer" onclick="openMuseum(4)">
+            <img src="/images/museuLouvre3.jpg" alt="Example 4">
+            <div class="overlay">Example 4</div>
+          </div>
+        </div>
     </div>
     
     <div class="container-fluid footer" id="footer">
         <div class="row">
           <div class="col-2 footer-option">
-            <p onclick="" class="footer-text pointer">About us</p>
+            <p onclick="openAbout()" class="footer-text pointer">About us</p>
           </div>
           <div class="col-2 footer-option">
-            <p onclick="" class="footer-text pointer">Contacts</p>
+            <p onclick="openContacts()" class="footer-text pointer">Contacts</p>
           </div>
           <div class="col-2 footer-option">
-            <p onclick="alert('1')" class="footer-text pointer">Support</p>
+            <p onclick="openSupport()" class="footer-text pointer">Support</p>
           </div>
           <div class="col-6 footer-default">
             <p class="footer-text">©PDG-Turismo</p>
