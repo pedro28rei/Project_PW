@@ -1,0 +1,25 @@
+<p>teste-angular-databases works!</p>
+<table #example datatable class="table">
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start date</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(e of employees; track e){
+            <tr>
+                <td>{{ e.name }}</td>
+                <td>{{ e.position }}</td>
+                <td>{{ e.office }}</td>
+                <td>{{ e.age }}</td>
+                <td>{{ e.startDate }}</td>
+                <td>{{ e.salary }}</td>
+            </tr>
+        }
+      </tbody>
+</table>
