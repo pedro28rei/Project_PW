@@ -32,11 +32,4 @@ export class HomeComponent {
   openMuseum(id: number){
     alert(id);
   }
-
-  incAux() {
-    this.aux += 1;
-  }
-  resAux(){
-    this.aux = 0;
-  }
 }

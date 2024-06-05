@@ -8,18 +8,20 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <i id="navigateHome" class="bi bi-house-fill pointer home-option"></i>
+    
   <app-root></app-root>
 
   <div class="container-fluid footer" id="footer">
     <div class="row">
       <div class="col-2 footer-option">
-        <p (click)="navigateTo('about')" class="footer-text pointer">About us</p>
+        <p id="navigateAbout" class="footer-text pointer">About us</p>
       </div>
       <div class="col-2 footer-option">
-        <p (click)="navigateTo('contacts')" class="footer-text pointer">Contacts</p>
+        <p id="navigateContacts" class="footer-text pointer">Contacts</p>
       </div>
       <div class="col-2 footer-option">
-        <p (click)="navigateTo('support')" class="footer-text pointer">Support</p>
+        <p id="navigateSupport" class="footer-text pointer">Support</p>
       </div>
       <div class="col-6 footer-default">
         <p class="footer-text">©PDG-Turismo</p>
