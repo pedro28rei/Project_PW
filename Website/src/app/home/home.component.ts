@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 class Museum {
   id: number;
@@ -28,8 +29,9 @@ export class HomeComponent {
 
   aux: number = 0;
 
+  constructor(private router: Router) {}
 
   openMuseum(id: number){
-    alert(id);
+    this.router.navigate(['/museum', id]);
   }
 }

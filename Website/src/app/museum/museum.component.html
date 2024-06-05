@@ -1,0 +1,29 @@
+
+@if (item) {
+    <div class="w-100 top-image" style="background-image: url('{{item.imagesrc}}');" id="div-top-image">
+        <div class="language-option">
+            <img src="../../assets/images/flags/us.svg" alt="English" onclick="alert('teste')">
+        </div>
+        <div class="row">
+            <div class="top-image-text">
+              <h1>{{item.title}}</h1>
+              <h2>{{item.subtitle}}</h2>
+            </div>
+          </div>
+    </div>
+
+    <div class="container content" id="content">
+        <p [innerHTML]="item.description"></p>
+    </div>
+
+}
+@else {    
+    <div class="language-option">
+        <img src="../../assets/images/flags/us.svg" alt="English" onclick="alert('teste')">
+    </div>
+    <div class="container-fluid p-5 text-center h-100 content">
+        <h1>Something went wrong</h1>
+        <p>We couldn't load the page you were looking for.</p> 
+        <p>Please return to the home page and try again.</p> 
+    </div>
+}
