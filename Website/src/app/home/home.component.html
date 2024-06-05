@@ -1,0 +1,27 @@
+
+<div class="w-100 top-image" id="div-top-image">
+    <div class="language-option"><img src="../../assets/images/flags/us.svg" title="Change Language / Alterar Idioma" id="languageFlag" onclick="changeLanguage()"></div>
+    <div class="row">
+      <div class="top-image-text">
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+      </div>
+    </div>
+</div>
+
+<div class="container p-1 content" id="content" >        
+    <div class="row museum-row">
+      <div class="col-12">
+        <h2 class="text-center">Museums</h2>
+      </div>
+    </div>
+    
+    <div class="row museum-row">
+    @for(m of museums; track m){
+      <div class="col-4 museum-column pointer" (click)="openMuseum(m.id)">
+        <img src="../../assets/images/{{m.src}}" alt="{{m.name}}">
+        <div class="overlay">{{m.name}}</div>
+      </div>
+    }
+    </div>
+</div>
