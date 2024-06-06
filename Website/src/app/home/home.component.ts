@@ -1,18 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-class Museum {
-  id: number;
-  name: string;
-  src: string;
-
-  constructor(id: number, name: string, src: string) {
-    this.id = id;
-    this.name = name;
-    this.src = src;
-  }
-}
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -21,10 +9,11 @@ class Museum {
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  museums: Museum[] = [
-    new Museum(1, 'Exemplo 1', 'museuLouvre.jpg'),
-    new Museum(2, 'Museu 2', 'museuLouvre2.jpg'),
-    new Museum(3, 'Teste 3', 'museuLouvre3.jpg')
+  
+  museums = [
+    { id: 1, title: 'Example 1', imagesrc:'../../assets/images/museuLouvre.jpg' }, 
+    { id: 2, title: 'Example 2', imagesrc:'../../assets/images/museuLouvre2.jpg' }, 
+    { id: 3, title: 'Example 3', imagesrc:'../../assets/images/museuLouvre3.jpg' }
   ];
 
   aux: number = 0;
