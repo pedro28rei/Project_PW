@@ -16,6 +16,77 @@
         <p [innerHTML]="item.description"></p>
     </div>
 
+    <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="workModalLabel">{{workTitle}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="row">
+                        <div class="col-5 text-center">
+                            <img [src]="workImageSrc" class="img-fluid" [alt]="workTitle">
+                        </div>
+                        <div class="col-7">
+                            <p><b>Artist:</b> {{workArtist}}</p>
+                            <p><b>Description:</b> {{workDescription}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="audioModal" tabindex="-1" aria-labelledby="audioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="audioModalLabel">{{audioTitle}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="row">
+                        <audio controls [innerHTML]="audioSrc"></audio> 
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p><b>Transcript:</b> <span [innerHTML]="audioTranscript"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="videoModalLabel">{{videoTitle}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="row">
+                        <video controls [innerHTML]="videoSrc"></video> 
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p><b>Description:</b> <span [innerHTML]="videoDescription"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+	<button (click)="openModalWork(2)">Exemplo Obra</button>
+	<button (click)="openModalAudio(1)">Exemplo Audio</button>
+	<button (click)="openModalVideo(1)">Exemplo Video</button>
+<!-- 
+-->
+
 }
 @else {    
     <div class="language-option">

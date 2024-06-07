@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+declare var bootstrap: any;
+
 @Component({
   selector: 'app-museum',
   standalone: true,
@@ -21,6 +23,29 @@ export class MuseumComponent implements OnInit {
     { id: 6 , title: 'Museu do Vaticano', subtitle:'Vaticano', imagesrc:'../../assets/images/museucoches.jpg', description:'The Vatican Museums, located within the walls of Vatican City, are one of the most impressive collections of art and historical artifacts in the world. Founded in the early 16th century, the museums have continually expanded their collection over the centuries, making them a must-see destination for lovers of art, history and culture. One of the main attractions of the Vatican Museums is the Sistine Chapel, famous for its magnificent frescoes, including Michelangelo’s iconic ceiling, which depicts scenes from Genesis and the Last Judgment. This Renaissance masterpiece is a testament to Michelangelo’s artistic genius and is considered one of the greatest achievements in the history of art. In addition to the Sistine Chapel, the Vatican Museums house an impressive collection of art ranging from Egyptian antiquities to Renaissance paintings and classical sculptures. Other highlights include the Borgia Apartments, richly decorated with frescoes by artists such as Raphael and Pinturicchio, and the Gallery of Maps, which displays a series of topographical maps of Italy painted in the 16th century. Other highlights include the Bramante Staircase, a masterpiece of Renaissance architecture, and the Pinacoteca Vaticana, which houses a collection of paintings by artists such as Raphael, Caravaggio and Leonardo da Vinci. In addition, the Vatican Museums also house an impressive collection of religious artefacts, including chalices, vestments and sacred relics. With their vast collection and historical wealth, the Vatican Museums offer visitors a unique opportunity to explore art and human history through the centuries, providing a truly unforgettable experience.'}
   ]
 
+  works = [
+    { id: 1, museum: 1, title:'Mona Lisa', imagesrc:'../../assets/images/monalisa.webp', artist: 'Leonardo da Vinci', description: 'The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as "the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world".'},
+    { id: 2, museum: 1, title:'Liberty Leading the People', imagesrc:'../../assets/images/La_Liberté_guidant_le_peuple.jpg', artist: 'Eugène Delacroix', description: 'Liberty Leading the People is a painting of the Romantic era by the French artist Eugène Delacroix, commemorating the July Revolution of 1830 that toppled King Charles X.'}
+  ]
+  workImageSrc: string | undefined;
+  workTitle: string | undefined;
+  workArtist: string | undefined;
+  workDescription: string | undefined;
+
+  audios = [
+    { id: 1, museum: 1, title:'Never Gonna Give You Up', src:'<source src="../../assets/audios/NeverGonnaGiveYouUp.mp3">', transcript: 'We\'re no strangers to love<br>You know the rules and so do I (do I)<br>A full commitment\'s what I\'m thinking of<br>You wouldn\'t get this from any other guy<br>I just wanna tell you how I\'m feeling<br>Gotta make you understand<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>We\'ve known each other for so long<br>Your heart\'s been aching, but you\'re too shy to say it (say it)<br>Inside, we both know what\'s been going on (going on)<br>We know the game and we\'re gonna play it<br>And if you ask me how I\'m feeling<br>Don\'t tell me you\'re too blind to see<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>We\'ve known each other for so long<br>Your heart\'s been aching, but you\'re too shy to say it (to say it)<br>Inside, we both know what\'s been going on (going on)<br>We know the game and we\'re gonna play it<br>I just wanna tell you how I\'m feeling<br>Gotta make you understand<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you'}
+  ]
+  audioTitle: string | undefined;
+  audioSrc: string | undefined;
+  audioTranscript: string | undefined;
+
+  videos = [
+    { id: 1, museum: 1, title:'Fernando Mendes', src:'<source src="../../assets/videos/FernandoMendes.mp4">', thumbnail:'../../assets/images/FernandoMendes.png', transcript: 'Espetáculo'}
+  ]
+  videoTitle: string | undefined;
+  videoSrc: string | undefined;
+  videoDescription: string | undefined;
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
@@ -28,6 +53,43 @@ export class MuseumComponent implements OnInit {
       const id = +params['id']; // convert to number
       this.item = this.items.find(item => item.id === id);
     });
+  }
+  
+  openModalWork(id: number) {
+    const selectedWork = this.works.find(img => img.id === id);
+    if (selectedWork) {
+      this.workImageSrc = selectedWork.imagesrc;
+      this.workTitle = selectedWork.title;
+      this.workArtist = selectedWork.artist;
+      this.workDescription = selectedWork.description;
+      const modalElement = document.getElementById('workModal');
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
+  
+  openModalAudio(id: number) {
+    const selectedAudio = this.audios.find(aud => aud.id === id);
+    if (selectedAudio) {
+      this.audioTitle = selectedAudio.title;
+      this.audioSrc = selectedAudio.src;
+      this.audioTranscript = selectedAudio.transcript;
+      const modalElement = document.getElementById('audioModal');
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
+  
+  openModalVideo(id: number) {
+    const selectedVideo = this.videos.find(vid => vid.id === id);
+    if (selectedVideo) {
+      this.videoTitle = selectedVideo.title;
+      this.videoSrc = selectedVideo.src;
+      this.videoDescription = selectedVideo.transcript;
+      const modalElement = document.getElementById('videoModal');
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
 
 }
