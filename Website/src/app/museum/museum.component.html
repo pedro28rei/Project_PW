@@ -13,7 +13,26 @@
     </div>
 
     <div class="container content" id="content">
+        <h3>Description</h3>
         <p [innerHTML]="item.description"></p>
+    </div>
+
+    <hr>
+    
+    <div class="container content" id="works">
+        <h3>Catalog</h3>
+        <div class="row">
+            @for(w of works; track w){
+                @if (w.museum == item.id){
+                    <div class="col-2" (click)="openModalWork(w.id)">                        
+                        <div class="square">
+                            <div class="square-content pointer" style="background-image: url('{{w.imagesrc}}');" [title]="w.title">
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
     </div>
 
     <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true">
@@ -38,6 +57,25 @@
         </div>
     </div>
 
+    <hr>
+    
+    <div class="container content" id="audios">
+        <h3>Audios</h3>
+        <div class="row">
+            @for(a of audios; track a){
+                @if (a.museum == item.id){
+                    <div class="col-1" (click)="openModalAudio(a.id)">                        
+                        <div class="square">
+                            <div class="square-content pointer" [title]="a.title">
+                                <i class="bi bi-volume-up-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+
     <div class="modal fade" id="audioModal" tabindex="-1" aria-labelledby="audioModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
@@ -56,6 +94,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="container content" id="videos">
+        <h3>Videos</h3>
+        <div class="row">
+            @for(v of videos; track v){
+                @if (v.museum == item.id){
+                    <div class="col-2" (click)="openModalVideo(v.id)">                        
+                        <div class="square">
+                            <div class="square-content pointer" style="background-image: url('{{v.thumbnail}}');" [title]="v.title">
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
         </div>
     </div>
 
@@ -79,14 +135,6 @@
             </div>
         </div>
     </div>
-
-      
-	<button (click)="openModalWork(2)">Exemplo Obra</button>
-	<button (click)="openModalAudio(1)">Exemplo Audio</button>
-	<button (click)="openModalVideo(1)">Exemplo Video</button>
-<!-- 
--->
-
 }
 @else {    
     <div class="language-option">
