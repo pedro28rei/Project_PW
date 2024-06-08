@@ -1,50 +1,31 @@
-import { Component, OnInit, Inject, PLATFORM_ID  } from '@angular/core';
-import { RouterOutlet, Router } from '@angular/router';
-import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, Router, NavigationEnd, Event  } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { FooterComponent  } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   title = 'websitemuseus';
-  constructor(
-    private router: Router,
-    @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  showFooter: boolean = true;
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      const navigateH = document.getElementById('navigateHome');
-      if (navigateH) {
-        navigateH.addEventListener('click', () => {
-          this.router.navigate(['/']);
-        });
-      }
+    this.router.events.pipe(
+      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.showFooter = this.checkIfFooterShouldBeVisible(event.urlAfterRedirects);
+    });
+  }
 
-      const navigateA = document.getElementById('navigateAbout');
-      if (navigateA) {
-        navigateA.addEventListener('click', () => {
-          this.router.navigate(['/about']);
-        });
-      }
-      
-      const navigateC = document.getElementById('navigateContacts');
-      if (navigateC) {
-        navigateC.addEventListener('click', () => {
-          this.router.navigate(['/contacts']);
-        });
-      }
-      
-      const navigateS = document.getElementById('navigateSupport');
-      if (navigateS) {
-        navigateS.addEventListener('click', () => {
-          this.router.navigate(['/support']);
-        });
-      }
-    }
+  checkIfFooterShouldBeVisible(url: string): boolean {
+    const noFooterRoutes = ['/login', '/regist'];
+    return !noFooterRoutes.some(route => url.includes(route));
   }
 }
