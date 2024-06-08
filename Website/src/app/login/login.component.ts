@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,12 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
 
+  constructor(private router: Router) {}
+
+
+  // Funtion that check user email and password and execute the login on the website
   loginUser() {
-    // Your login logic here
-    console.log('Email:', this.email);
-    console.log('Password:', this.password);
+
+    var email= document.getElementById("email-04");
+    var password = document.getElementById("password-o4");
+    this.router.navigate(['/home']);
+  }
+
+  // Function that take user to home page
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
+
+  //Function that take user to regist page
+  navigateToRegist() {
+    this.router.navigate(['/regist'])
   }
 }

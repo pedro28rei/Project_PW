@@ -1,16 +1,26 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
 <div id="bg-04">
+
     <div class="main-04">
-        <!-- Clickable icon that takes the user to the home page -->
+
+        <!--Icon div-->
         <div class="iconDiv-04">
-            <a routerLink="/">
-                <img src="assets/logo.png" class="icon-04" alt="Logo" />
+
+            <!-- Clickable icon that takes the user to the home page -->
+            <a (click)="navigateToHome()">
+                <img src="../../assets/images/museuIcon.jpg" class="icon-04" alt="Logo" />
             </a>
+
         </div>
-        <!-- Form -->
+
+        <!-- Form div -->
         <div class="formDiv-04">
+
             <span class="poppins-regular greetings-04">
                 <b>Welcome!</b>
             </span>
+
             <div class="input-box-04">
                 <span class="material-symbols-outlined">person</span>
                 <input
@@ -20,6 +30,7 @@
                     placeholder="Email"
                 />
             </div>
+
             <div class="input-box-04">
                 <span class="material-symbols-outlined">lock</span>
                 <input
@@ -29,12 +40,12 @@
                     placeholder="Password"
                 />
             </div>
-            <button class="poppins-regular button-04" (click)="loginUser()">
-                Login
-            </button>
-            <span class="poppins-regular linknote-04">
-                Not registered? <a routerLink="/register">Create</a>
-            </span>
+            
+            <!--Login button-->
+            <button class="poppins-regular button-04" (click)="loginUser()"> Login</button>
+
+            <span class="poppins-regular linknote-04"> Not registered? <a (click)="navigateToRegist()">Create</a></span>
+
         </div>
     </div>
 </div>
