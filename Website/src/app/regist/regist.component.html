@@ -1,1 +1,82 @@
-<p>regist works!</p>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+<div id="bg-06">
+
+    <div class="main-06">
+
+       <!--Icon div-->
+      <div class="iconDiv-06">
+
+        <!-- Clickable icon that takes the user to the home page -->
+        <a (click)="navigateToHome()">
+            <img src="../../assets/images/museuIcon.jpg" class="icon-06" alt="Logo" />
+        </a>
+
+      </div>
+
+      <!-- Form div -->
+      <div class="formDiv-06">
+        
+        <span class="poppins-regular greetings-06">
+          <b>Join us!</b>
+        </span>
+  
+        <div class="input-box-06">
+          <span class="material-symbols-outlined">person</span>
+          <input
+            class="poppins-regular input-06"
+            type="text"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+  
+        <div class="input-box-06">
+          <span class="material-symbols-outlined">alternate_email</span>
+          <input
+            class="poppins-regular input-06"
+            type="text"
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+  
+        <div class="input-box-06">
+          <span class="material-symbols-outlined">lock</span>
+          <input
+            class="poppins-regular input-06"
+            type="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+  
+        <div class="input-box-06">
+          <span class="material-symbols-outlined fa-06">calendar_month</span>
+          <input
+            class="poppins-regular input-06"
+            type="date"
+            id="bd"
+            placeholder="Birthday"
+            min="1900-01-01"
+          />
+        </div>
+  
+        <div class="input-box-06">
+          <span class="material-symbols-outlined">call</span>
+          <input
+            class="poppins-regular input-06"
+            type="number"
+            id="phone"
+            placeholder="Phone number"
+          />
+        </div>
+  
+        <button class="poppins-regular button-06">Register</button>
+  
+        <span class="poppins-regular linknote-06">
+          Already registered? <a class="linkhover" (click)="navigateToLogin()">Login</a>
+        </span>
+      </div>
+    </div>
+  </div>
