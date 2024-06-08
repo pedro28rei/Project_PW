@@ -11,9 +11,10 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   
   museums = [
-    { id: 1, title: 'Example 1', imagesrc:'../../assets/images/museuLouvre.jpg' }, 
-    { id: 2, title: 'Example 2', imagesrc:'../../assets/images/museuLouvre2.jpg' }, 
-    { id: 3, title: 'Example 3', imagesrc:'../../assets/images/museuLouvre3.jpg' }
+    { id: 1, title: 'Louvre', imagesrc:'../../assets/images/museuLouvre.jpg' }, 
+    { id: 7, title: 'Prado', imagesrc:'../../assets/images/MuseuDoPrado.jpg' }, 
+    { id: 3, title: 'Coches', imagesrc:'../../assets/images/MuseuDosCoches.jpg' },
+    { id: 5, title:  'Vaticano', imagesrc:'../../assets/images/MuseudoVaticano.jpg'}
   ];
 
   constructor(private router: Router) {}
