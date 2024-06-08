@@ -16,8 +16,6 @@ export class HomeComponent {
     { id: 3, title: 'Example 3', imagesrc:'../../assets/images/museuLouvre3.jpg' }
   ];
 
-  aux: number = 0;
-
   constructor(private router: Router) {}
 
   openMuseum(id: number){
