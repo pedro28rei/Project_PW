@@ -14,9 +14,13 @@ export class LoginComponent {
   // Funtion that check user email and password and execute the login on the website
   loginUser() {
 
-    var email= document.getElementById("email-04");
-    var password = document.getElementById("password-o4");
-    this.router.navigate(['/home']);
+    var email = (<HTMLInputElement>document.getElementById("email-04")).value;
+    var password = (<HTMLInputElement>document.getElementById("password-04")).value;
+
+    // Verification of user credentials
+    if (email === "" || password === "") {  alert("Invalid Credentials");} 
+    else { this.router.navigate(['/home']);}
+
   }
 
   // Function that take user to home page

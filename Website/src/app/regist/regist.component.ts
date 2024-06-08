@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-regist',
@@ -9,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class RegistComponent {
 
+    constructor(private router: Router) {}
+
+    // Function that take user to home page
+    navigateToHome() {
+      this.router.navigate(['/home']);
+    }
+
+    navigateToLogin() {
+      this.router.navigate(['login']);
+    }
 }
