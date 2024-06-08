@@ -1,1 +1,40 @@
-<p>login works!</p>
+<div id="bg-04">
+    <div class="main-04">
+        <!-- Clickable icon that takes the user to the home page -->
+        <div class="iconDiv-04">
+            <a routerLink="/">
+                <img src="assets/logo.png" class="icon-04" alt="Logo" />
+            </a>
+        </div>
+        <!-- Form -->
+        <div class="formDiv-04">
+            <span class="poppins-regular greetings-04">
+                <b>Welcome!</b>
+            </span>
+            <div class="input-box-04">
+                <span class="material-symbols-outlined">person</span>
+                <input
+                    class="poppins-regular input-04"
+                    type="text"
+                    id="email-04"
+                    placeholder="Email"
+                />
+            </div>
+            <div class="input-box-04">
+                <span class="material-symbols-outlined">lock</span>
+                <input
+                    class="poppins-regular input-04"
+                    type="password"
+                    id="password-04"
+                    placeholder="Password"
+                />
+            </div>
+            <button class="poppins-regular button-04" (click)="loginUser()">
+                Login
+            </button>
+            <span class="poppins-regular linknote-04">
+                Not registered? <a routerLink="/register">Create</a>
+            </span>
+        </div>
+    </div>
+</div>
