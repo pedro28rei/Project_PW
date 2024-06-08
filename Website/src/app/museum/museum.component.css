@@ -1,4 +1,4 @@
-.top-image, .content {
+.top-image, .content, .content-special {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: white;
 }
@@ -50,6 +50,17 @@
 
 .content p {
     font-size: 18px;
+}
+
+.content-special {
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    background-color: #456d61;
 }
 
 .square {
