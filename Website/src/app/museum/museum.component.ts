@@ -30,7 +30,12 @@ export class MuseumComponent implements OnInit {
 
   works = [
     { id: 1, museum: 1, title:'Mona Lisa', imagesrc:'../../assets/images/monalisa.webp', artist: 'Leonardo da Vinci', description: 'The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as "the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world".'},
-    { id: 2, museum: 1, title:'Liberty Leading the People', imagesrc:'../../assets/images/La_Liberté_guidant_le_peuple.jpg', artist: 'Eugène Delacroix', description: 'Liberty Leading the People is a painting of the Romantic era by the French artist Eugène Delacroix, commemorating the July Revolution of 1830 that toppled King Charles X.'}
+    { id: 2, museum: 1, title:'Liberty Leading the People', imagesrc:'../../assets/images/La_Liberté_guidant_le_peuple.jpg', artist: 'Eugène Delacroix', description: 'Liberty Leading the People is a painting of the Romantic era by the French artist Eugène Delacroix, commemorating the July Revolution of 1830 that toppled King Charles X.'},
+    { id: 3, museum: 1, title:'Vénus de Milo', imagesrc:'../../assets/images/venusdemilo.jpg', artist:' Alexandre de Antioquia', description:'An ancient Greek sculpture depicting the goddess of love and beauty, it is one of the most famous sculptures of the classical world.'},
+    { id:4, museum: 1, title: 'Vitória de Samotrácia', imagesrc:'../../assets/images/vitoriasamotracia.jpg', artist:'descpnhecida', description:'This marble sculpture represents the Greek goddess Nike, personification of victory, and is one of the most impressive works of Hellenic art.'},
+    { id:5, museum: 1, title: 'A Escola de Atenas de Rafael', imagesrc:'../../assets/images/escoladeantesrafael.jpg', artist:'Rafael', description:'This famous Renaissance painting depicts the greatest philosophers of Ancient Greece gathered in a monumental setting, symbolizing knowledge and wisdom.'},
+    { id:6, museum: 1, title:'O Código de Hamurábi', imagesrc:'../../assets/images/CodigoHamurábico.jpg', artist:'Hamurabi', description:'An ancient set of laws inscribed on a stone stele, it is one of the oldest known forms of legislation and offers insights into Mesopotamian civilization.'},
+    { id:7, museum: 1, title:'Grande Esfinge de Tanis', imagesrc:'../../assets/images/GrandeEsfingeTanis.jpg', artist:'desconhecido', description:'This colossal sculpture represents one of the most recognizable symbols of Ancient Egypt and is one of the largest preserved sphinxes.'}
   ]
   workImageSrc: string | undefined;
   workTitle: string | undefined;
