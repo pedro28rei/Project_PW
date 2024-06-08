@@ -16,5 +16,5 @@ export const routes: Routes = [
     { path: 'support', component: SupportComponent },
     { path: 'museum/:id', component: MuseumComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'login', component: RegistComponent },
+    { path: 'regist', component: RegistComponent },
 ];
