@@ -140,7 +140,41 @@
     <div class="container-fluid content-special" id="content">
         <div class="row">
             <div class="col-6">
-                <h3>Schedule</h3>
+                <h3>Hours</h3>
+                <table class="hours-table">
+                    <tbody>
+                        @for (h of hours; track h){
+                            @if (h.museum == item.id){
+                            <tr>
+                                @switch (h.day){
+                                    @case (1){
+                                        <td><b>Sunday:</b></td>                                        
+                                    }
+                                    @case (2){
+                                        <td><b>Monday:</b></td>                                        
+                                    }
+                                    @case (3){
+                                        <td><b>Tuesday:</b></td>                                        
+                                    }
+                                    @case (4){
+                                        <td><b>Wednesday:</b></td>                                        
+                                    }
+                                    @case (5){
+                                        <td><b>Thursday:</b></td>                                        
+                                    }
+                                    @case (6){
+                                        <td><b>Friday:</b></td>                                        
+                                    }
+                                    @case (7){
+                                        <td><b>Saturday:</b></td>                                        
+                                    }
+                                }
+                                <td>{{h.opens}} <span><i class="bi bi-arrow-right"></i></span> {{h.closes}}</td>
+                            </tr>
+                            }
+                        }
+                    </tbody>
+                  </table>
             </div>
             <div class="col-6">
                 <h3>Address</h3>
