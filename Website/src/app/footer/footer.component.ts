@@ -24,10 +24,10 @@ export class FooterComponent implements OnInit{
           this.router.navigate(['/']);
         });
       }
-      const navigateR = document.getElementById('navigateRegist');
+      const navigateR = document.getElementById('navigateLogin');
       if (navigateR) {
         navigateR.addEventListener('click', () => {
-          this.router.navigate(['/regist']);
+          this.router.navigate(['/login']);
         });
       }
 

@@ -20,7 +20,8 @@
         <span class="poppins-regular greetings-06">
           <b>Join us!</b>
         </span>
-  
+        
+         <!--Div with input box for user name-->
         <div class="input-box-06">
           <span class="material-symbols-outlined">person</span>
           <input
@@ -30,7 +31,8 @@
             placeholder="Name"
           />
         </div>
-  
+        
+         <!--Div with input box for user email-->
         <div class="input-box-06">
           <span class="material-symbols-outlined">alternate_email</span>
           <input
@@ -40,7 +42,8 @@
             placeholder="Email"
           />
         </div>
-  
+        
+         <!--Div with input box for user password-->
         <div class="input-box-06">
           <span class="material-symbols-outlined">lock</span>
           <input
@@ -50,7 +53,8 @@
             placeholder="Password"
           />
         </div>
-  
+        
+         <!--Div with input box for user birth date-->
         <div class="input-box-06">
           <span class="material-symbols-outlined fa-06">calendar_month</span>
           <input
@@ -61,7 +65,8 @@
             min="1900-01-01"
           />
         </div>
-  
+        
+         <!--Div with input box for user phone number-->
         <div class="input-box-06">
           <span class="material-symbols-outlined">call</span>
           <input
@@ -71,9 +76,11 @@
             placeholder="Phone number"
           />
         </div>
-  
-        <button class="poppins-regular button-06">Register</button>
-  
+        
+        <!--Regist button-->
+        <button class="poppins-regular button-06" (click)="registUser()">Register</button>
+        
+        <!--Text that take user to login page-->
         <span class="poppins-regular linknote-06">
           Already registered? <a class="linkhover" (click)="navigateToLogin()">Login</a>
         </span>
