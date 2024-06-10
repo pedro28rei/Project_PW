@@ -63,37 +63,34 @@ export class MuseumComponent implements OnInit {
     { id:5, museum: 1, title: 'A Escola de Atenas de Rafael', imagesrc:'../../assets/images/escoladeantesrafael.jpg', artist:'Rafael', description:'This famous Renaissance painting depicts the greatest philosophers of Ancient Greece gathered in a monumental setting, symbolizing knowledge and wisdom.'},
     { id:6, museum: 1, title:'O Código de Hamurábi', imagesrc:'../../assets/images/CodigoHamurábico.jpg', artist:'Hamurabi', description:'An ancient set of laws inscribed on a stone stele, it is one of the oldest known forms of legislation and offers insights into Mesopotamian civilization.'},
     { id:7, museum: 1, title:'Grande Esfinge de Tanis', imagesrc:'../../assets/images/GrandeEsfingeTanis.jpg', artist:'desconhecido', description:'This colossal sculpture represents one of the most recognizable symbols of Ancient Egypt and is one of the largest preserved sphinxes.'},
-    { id:8, museum: 1, title:'O Rapto das Sabinas de Jacques-Louis David', imagesrc:'../../assets/RaptoSabrinas.jpg', artist:'Rômulo', description:'A masterpiece of neoclassicism depicting an episode from the Roman zodiac, demonstrating the artists skill in capturing drama and emotion.'},
+  
     
     /*museu dos coches */
     { id: 9, museum: 2, title:'Carruagem de D. João V', imagesrc:'../../assets/images/carruagemDJOAOV.jpg', description:'A masterpiece of the Baroque style, this carriage is richly ornamented with gilded details and exuberant carvings, representing the height of luxury in the 18th century.'},
     { id:10, museum: 2, title:'Carruagem da Coroa', imagesrc:'../../assets/images/CarruagemCoroa.jpg', description:'One of the most imposing pieces in the museum, this carriage was commissioned by King João VI and is adorned with symbols of the Portuguese monarchy, including the royal crown and coat of arms.'},
     { id:11, museum: 2, title:'Berlinda da Rainha D. Maria Pia', imagesrc:'../../assets/images/BerlindaRainhaDMariaPia.jpg', description:'This elegant carriage was used by Queen Maria Pia, wife of King Luís I, and stands out for its sophistication and delicate details.'},
     { id:12, museum: 2, title:'Carruagem de Gala de D. Maria II', imagesrc:'../../assets/images/CarruagemGalaMariaII.jpg', description:'A stunning piece that reflects the neoclassical style of the 19th century, this carriage was used on ceremonial occasions by Queen Maria II.'},
-    { id:13, musuem: 2, title:'Carruagem de D. Carlos I', iamgesrc:'../../assets/images/CarruagemDCARLOSI.jpg', description:'This carriage, used by the last king of Portugal, is a stunning example of late 19th century design and engineering, with exquisite detailing and a majestic appearance.' },
     { id:14, museum: 2, title:'Carruagem de D. Fernando II', imagesrc:'../../assets/images/CarruagemDFernandoII.jpg', description:'Commissioned by King Ferdinand II, this carriage stands out for its elegant design and its association with 19th century romanticism.'},
     { id:15, museum: 2, title:'Carruagem da Princesa D. Isabel Maria', imagesrc:'../../assets/images/CarruagemPricnesaIsabel.jpg', description:'Used by Princess Isabel Maria, this carriage is a notable example of the Rococo style, with graceful curves and elaborate decorations.'},
 
     /*museu do vaticano*/
 
-    { id: 16, museum: 3, title:'Teto da Capela Sistina por Michelangelo', imagesrc:'../../assets/images/TetoCapela.jpg', description:'One of the most famous works of art in the world, the ceiling of the Sistine Chapel features a series of spectacular frescoes depicting scenes from Genesis, including the famous creation of Adam.'},
+    { id: 16, museum: 3, title:'Teto da Capela Sistina por Michelangelo', imagesrc:'../../assets/images/tetocapela.jpg', description:'One of the most famous works of art in the world, the ceiling of the Sistine Chapel features a series of spectacular frescoes depicting scenes from Genesis, including the famous creation of Adam.'},
     { id: 17, museum: 3, title:'Juízo Final por Michelangelo', imagesrc:'../../assets/images/JuizoFinal.jpg', description:'Located on the wall behind the altar of the Sistine Chapel, this gigantic fresco depicts the Last Judgment and is one of Michelangelos most impressive and controversial works.' },
-    { id: 18, museum: 3, title:'Esfera Armilar e Muralha de Areia de Belvedere', imagesrc:'../../assets/images/Esfera Armilar', description:'Ancient sculptures dating back to Ancient Rome, these works represent the artistic skill of the sculptors of the time and are impressive examples of classical art.'},
-    { id: 19, museum: 3, title:'Afrescos nos Apartamentos de Rafael', imagesrc:'../../assets/images/Afrescos', description:'The frescoes painted by Raphael and his team in the Raphael Apartments depict scenes from papal life and are considered some of the Renaissance masters finest works.'},
-    { id: 20, museum: 3, title:'Escadaria de Bramante', imagesrc:'../../assets/images/EscadariaBramante', description:'A masterpiece of Renaissance architecture, this spiral staircase was designed by Donato Bramante and is one of the museums most beautiful architectural features.'},
-    { id: 21, museum: 3, title:'Pinacoteca Vaticana', imagesrc:'../../assets/images/PinacotecaVaticana', description:'This gallery houses a collection of Renaissance and Baroque paintings by artists such as Raphael, Caravaggio, Leonardo da Vinci and Titian, offering a comprehensive overview of Italian art.'},
-    { id: 22, museum: 3, title:'Laocoonte e Seus Filhos', imagesrc:'../../assets/images/LaocoonteeFilhos', description:'An ancient Greek sculpture depicting the Trojan priest Laocoon and his sons being attacked by serpents is one of the most famous works of classical sculpture.'},
-
+    { id: 18, museum: 3, title:'Esfera Armilar e Muralha de Areia de Belvedere', imagesrc:'../../assets/images/Esfera Armilar e Muralha de Areia de Belvedere.jpg', description:'Ancient sculptures dating back to Ancient Rome, these works represent the artistic skill of the sculptors of the time and are impressive examples of classical art.'},
+    { id: 19, museum: 3, title:'Afrescos nos Apartamentos de Rafael', imagesrc:'../../assets/images/Afrescos nos Apartamentos de Rafael.jpg', description:'The frescoes painted by Raphael and his team in the Raphael Apartments depict scenes from papal life and are considered some of the Renaissance masters finest works.'},
+    { id: 20, museum: 3, title:'Escadaria de Bramante', imagesrc:'../../assets/images/EscadariaBramante.jpg', description:'A masterpiece of Renaissance architecture, this spiral staircase was designed by Donato Bramante and is one of the museums most beautiful architectural features.'},
+    { id: 21, museum: 3, title:'Pinacoteca Vaticana', imagesrc:'../../assets/images/PinacotecaVaticana.jpg', description:'This gallery houses a collection of Renaissance and Baroque paintings by artists such as Raphael, Caravaggio, Leonardo da Vinci and Titian, offering a comprehensive overview of Italian art.'},
+    
 
     /* museu do prado*/
 
-    { id: 23, museum: 4, title:'As Meninas ', imagesrc:'../../assets/images/AsMeninas ', author:'Diego Velázquez', description:'One of the most famous paintings in the world, this complex and intriguing portrait is a 17th-century masterpiece and a symbol of Velázquezs genius.'},
-    { id: 24, museum: 4, title:'O 3 de Maio de 1808 em Madrid', imagesrc:'../../assets/images/O3deMaiode1808emMadrid', author:'Francisco de Goya', description:'This monumental painting depicts the massacre of Spanish citizens by French troops during the Peninsular War and is a powerful symbol of resistance and patriotism.'},
-    { id: 25, museum: 4, title:'A Rendição de Breda ', imagesrc:'../../assets/images/ARendiçãodeBreda ', author:'Diego Velázquez', description:'Also known as "The Lances", this historical painting depicts the surrender of the city of Breda during the Eighty Years War and is one of Velázquezs most important works.'},
-    { id: 26, museum: 4, title:'A Maja Despida', imagesrc:'../../assets/images/AMajaDespida',author:'Francisco de Goya', description:': This nude portrait, which generated controversy at the time of its creation, is one of the most sensual and intriguing works in the Prado Museum.'},
-    { id: 27, museum: 4, title:'O Jardim das Delícias Terrenas', imagesrc:'../../assets/images/OJardimdasDelíciasTerrenas',author:'Hieronymus Bosch', description:'This surrealist triptych painting is a vivid representation of heaven, earth and hell, full of symbolism and imagination.'},
-    { id: 28, museum: 4, title:'O Lavrador de Parma ', imagesrc:'../../assets/images/OLavradordeParma', author:'Giuseppe Arcimboldo', description:'This unique work depicts a human face composed of a variety of fruits, vegetables and flowers, demonstrating Arcimboldos skill and creativity.'},
-    { id: 29, museum: 4, title:'A Anunciação', imagesrc:'../../assets/images/AAnunciação', author:'Fra Angelico', description:'This beautiful Renaissance fresco depicts the moment when the angel Gabriel announces to the Virgin Mary that she will give birth to Jesus, capturing the serenity and reverence of the event.'}
+    { id: 23, museum: 4, title:'As Meninas', imagesrc:'../../assets/images/AsMeninas.jpg ', author:'Diego Velázquez', description:'One of the most famous paintings in the world, this complex and intriguing portrait is a 17th-century masterpiece and a symbol of Velázquezs genius.'},
+    { id: 24, museum: 4, title:'O 3 de Maio de 1808 em Madrid', imagesrc:'../../assets/images/O3deMaiode1808emMadrid.jpg', author:'Francisco de Goya', description:'This monumental painting depicts the massacre of Spanish citizens by French troops during the Peninsular War and is a powerful symbol of resistance and patriotism.'},
+    { id: 25, museum: 4, title:'A Rendição de Breda ', imagesrc:'../../assets/images/A Rendição de Breda.jpg ', author:'Diego Velázquez', description:'Also known as "The Lances", this historical painting depicts the surrender of the city of Breda during the Eighty Years War and is one of Velázquezs most important works.'},
+    { id: 26, museum: 4, title:'A Maja Despida', imagesrc:'../../assets/images/AMajaDespida.jpg',author:'Francisco de Goya', description:': This nude portrait, which generated controversy at the time of its creation, is one of the most sensual and intriguing works in the Prado Museum.'},
+    { id: 28, museum: 4, title:'O Lavrador de Parma ', imagesrc:'../../assets/images/O Lavrador de Parma.jpg', author:'Giuseppe Arcimboldo', description:'This unique work depicts a human face composed of a variety of fruits, vegetables and flowers, demonstrating Arcimboldos skill and creativity.'},
+    { id: 29, museum: 4, title:'A Anunciação', imagesrc:'../../assets/images/AAnunciação.jpg', author:'Fra Angelico', description:'This beautiful Renaissance fresco depicts the moment when the angel Gabriel announces to the Virgin Mary that she will give birth to Jesus, capturing the serenity and reverence of the event.'}
   ]
   workImageSrc: string | undefined;
   workTitle: string | undefined;
@@ -101,7 +98,8 @@ export class MuseumComponent implements OnInit {
   workDescription: string | undefined;
 
 
-  audios = [
+  audios = 
+  [
     { id: 1, museum: 1, title:'Louvre', src:'<source src="../../assets/audios/audiolouvre.mp3">'},
     { id: 2, museum: 3, title:'Vaticano', src:'<source src="../../assets/audios/audiovaticano.mp3">'},
     { id: 3, museum: 4, title:'Prado', src:'<source src="../../assets/audios/audioprado.mp3">'}
@@ -111,11 +109,12 @@ export class MuseumComponent implements OnInit {
   audioSrc: string | undefined;
   audioTranscript: string | undefined;
 
-  videos = [
-    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../assets/videos/videolouvre.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museulouvre'},
-    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../assets/videos/videocoches.mp4">', thumbnail:'../../assets/images/museucoches.png', transcript: 'museucoches'},
-    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../assets/videos/videovaticano.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museuvaticano'},
-    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../assets/videos/videoprado.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museuprado'}
+  videos = 
+  [
+    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../assets/videos/videolouvre.mp4">', thumbnail:'../../../assets/images/museulouvre.png', transcript: 'Museu do Louvre'},
+    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../assets/videos/videocoches.mp4">', thumbnail:'../../../assets/images/MuseuDosCoches.png', transcript: 'Museu Dos Coches'},
+    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../assets/videos/videovaticano.mp4">', thumbnail:'../../../assets/images/MuseuDoVaticano.png', transcript: 'Museu do Vaticano'},
+    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../assets/videos/videoprado.mp4">', thumbnail:'../../../assets/images/MuseuDoPrado.png', transcript: 'Museu do Prado'}
   ]
   videoTitle: string | undefined;
   videoSrc: string | undefined;
