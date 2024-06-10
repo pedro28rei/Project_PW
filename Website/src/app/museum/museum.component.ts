@@ -100,11 +100,11 @@ export class MuseumComponent implements OnInit {
   workArtist: string | undefined;
   workDescription: string | undefined;
 
-  audios = [
+  /*audios = [
     { id: 1, museum: 1, title:'Louvre', src:'<source src="../../assets/audios/audiolouvre.mp3">'},
     { id: 2, museum: 3, title:'Vaticano', src:'<source src="../../assets/audios/audiovaticano.mp3">'},
     { id: 3, museum: 4, title:'Prado', src:'<source src="../../assets/audios/audioprado.mp3">'}
-  ]
+  ]*/
   audioTitle: string | undefined;
   audioSrc: string | undefined;
   audioTranscript: string | undefined;
