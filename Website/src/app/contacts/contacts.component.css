@@ -1,3 +1,5 @@
+@import '../../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
 .contacts-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,7 +26,7 @@
 .header {
     margin-top: -2%;
     text-align: justify;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .header p {
@@ -32,14 +34,21 @@
     color: #555;
 }
 
-.contact-info, .office-location, .social-media {
-    margin-top: 50px;
+
+.title-2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #011c25;
 }
 
-.contact-info h2, .office-location h2, .social-media h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 15px;
+.contact-info, .office-location, .social-media {
+    margin-top: 50px;
 }
 
 .contact-info p, .office-location p {
@@ -58,7 +67,6 @@
 
 .social-media ul li a {
     font-size: 1.2em;
-    color: #0072ff;
     text-decoration: none;
 }
 
