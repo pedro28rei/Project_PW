@@ -1,0 +1,125 @@
+.contacts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ffffff;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    border-bottom: 4px solid #011c25;
+}
+
+.header {
+    margin-top: -2%;
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #011c25;
+}
+
+.contact-info, .office-location, .social-media {
+    margin-top: 50px;
+}
+
+.contact-info p, .office-location p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+.question-form {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.question-form h2 {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ffffff;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    border-bottom: 4px solid #011c25;
+}
+
+.question-form label {
+    display: block;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.question-form input, .question-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.question-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #011c25;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.question-form button:hover {
+    background-color: #014a5c;
+}

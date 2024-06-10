@@ -111,10 +111,10 @@ export class MuseumComponent implements OnInit {
 
   videos = 
   [
-    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../assets/videos/videolouvre.mp4">', thumbnail:'../../../assets/images/museulouvre.png', transcript: 'Museu do Louvre'},
-    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../assets/videos/videocoches.mp4">', thumbnail:'../../../assets/images/MuseuDosCoches.png', transcript: 'Museu Dos Coches'},
-    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../assets/videos/videovaticano.mp4">', thumbnail:'../../../assets/images/MuseuDoVaticano.png', transcript: 'Museu do Vaticano'},
-    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../assets/videos/videoprado.mp4">', thumbnail:'../../../assets/images/MuseuDoPrado.png', transcript: 'Museu do Prado'}
+    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../assets/videos/videolouvre.mp4">', thumbnail:'../../assets/images/museuLouvre.jpg', transcript: 'Museu do Louvre'},
+    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../assets/videos/videocoches.mp4">', thumbnail:'../../../assets/images/MuseuDosCoches.jpg', transcript: 'Museu Dos Coches'},
+    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../assets/videos/videovaticano.mp4">', thumbnail:'../../../assets/images/MuseuDoVaticano.jpg', transcript: 'Museu do Vaticano'},
+    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../assets/videos/videoprado.mp4">', thumbnail:'../../../assets/images/MuseuDoPrado.jpg', transcript: 'Museu do Prado'}
   ]
   videoTitle: string | undefined;
   videoSrc: string | undefined;
