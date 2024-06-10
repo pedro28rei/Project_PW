@@ -12,14 +12,18 @@ export class HomeComponent {
   
   museums = [
     { id: 1, title: 'Louvre', imagesrc:'../../assets/images/museuLouvre.jpg' }, 
-    { id: 7, title: 'Prado', imagesrc:'../../assets/images/MuseuDoPrado.jpg' }, 
-    { id: 3, title: 'Coches', imagesrc:'../../assets/images/MuseuDosCoches.jpg' },
-    { id: 5, title:  'Vaticano', imagesrc:'../../assets/images/MuseuDoVaticano.jpg'}
+    { id: 4, title: 'Prado', imagesrc:'../../assets/images/MuseuDoPrado.jpg' }, 
+    { id: 2, title: 'Coches', imagesrc:'../../assets/images/MuseuDosCoches.jpg' },
+    { id: 3, title:  'Vatican', imagesrc:'../../assets/images/MuseuDoVaticano.jpg'}
   ];
 
   constructor(private router: Router) {}
 
   openMuseum(id: number){
     this.router.navigate(['/museum', id]);
+  }
+
+  changeLanguage(){
+    this.router.navigate(['/pt']);
   }
 }

@@ -1,4 +1,9 @@
 <router-outlet></router-outlet>
 @if (showFooter){
-    <app-footer></app-footer>
+    @if (showFooterPt){
+        <app-footerpt></app-footerpt>
+    }
+    @else {
+        <app-footer></app-footer>
+    }
 }

@@ -1,0 +1,122 @@
+.top-image, .content, .content-special {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+.language-option {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+    margin: 1% 4% 0 0;
+    z-index: 2;
+}
+
+.top-image{
+    min-height: 80px;
+    height: 40%;
+    max-height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-image-text{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.top-image-text h1 {
+  font-size: 3rem;
+}
+.top-image-text h2 {
+  font-size: 2rem;
+}
+
+
+.content {
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.content-special {
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    background-color: #456d61;
+}
+
+.square {
+    position: relative;
+    padding-bottom: 100%;
+}
+.square-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.square-content:hover {
+    transform: scale(1.2);
+    transition: .2s ease;
+  }
+  
+.square-content i {
+    font-size: xxx-large;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0D1321;
+}
+
+.hours-table td{
+    padding: 5px;
+}
+
+
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px #0D1321 solid;
+    z-index: 1;
+}
+
+.nav-option {
+    border-right: 1px #0D1321 solid;
+    text-align: center;
+}
+
+.nav-default {
+    text-align: right;
+}
+
+.nav-text {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0;
+}

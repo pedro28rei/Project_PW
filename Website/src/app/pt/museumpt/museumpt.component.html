@@ -2,7 +2,7 @@
 @if (item) {
     <div class="w-100 top-image" style="background-image: url('{{item.imagesrc}}');" id="div-top-image">
         <div class="language-option">
-            <img src="../../assets/images/flags/us.svg" title="Change Language / Alterar Idioma" id="languageFlag" (click)="changeLanguage()">
+            <img src="../../../assets/images/flags/pt.svg" title="Change Language / Alterar Idioma" id="languageFlag" (click)="changeLanguage()">
         </div>
         <div class="row">
             <div class="top-image-text">
@@ -14,36 +14,36 @@
   <div class="container-fluid nav">
     <div class="col-1 nav-option"></div>
     <div class="col-1 pointer nav-option" (click)="scrollToDiv('content')">
-        <p class="nav-text">Description</p>
+        <p class="nav-text">Descrição</p>
     </div>
     <div class="col-1 pointer nav-option" (click)="scrollToDiv('works')">
-        <p class="nav-text">Catalog</p>
+        <p class="nav-text">Catálogo</p>
     </div>
     <div class="col-1 pointer nav-option" (click)="scrollToDiv('audios')">
-        <p class="nav-text">Audios</p>
+        <p class="nav-text">Áudios</p>
     </div>
     <div class="col-1 pointer nav-option" (click)="scrollToDiv('videos')">
-        <p class="nav-text">Videos</p>
+        <p class="nav-text">Vídeos</p>
     </div>
     <div class="col-1 pointer nav-option" (click)="scrollToDiv('hours')">
-        <p class="nav-text">Hours</p>
+        <p class="nav-text">Horário</p>
     </div>
     <div class="col-4 nav-option"></div>
     <div class="col-1 pointer nav-option bg-warning">
-        <p id="navigateSupport" class="nav-text">Tickets</p>
+        <p id="navigateSupport" class="nav-text">Bilheteira</p>
     </div>
     <div class="col-1"></div>
   </div>
 
     <div class="container content" id="content">
-        <h3>Description</h3>
+        <h3>Descrição</h3>
         <p [innerHTML]="item.description"></p>
     </div>
 
     <hr>
     
     <div class="container content" id="works">
-        <h3>Catalog</h3>
+        <h3>Catálogo</h3>
         <div class="row">
             @for(w of works; track w){
                 @if (w.museum == item.id){
@@ -71,8 +71,8 @@
                             <img [src]="workImageSrc" class="img-fluid" [alt]="workTitle">
                         </div>
                         <div class="col-7">
-                            <p><b>Artist:</b> {{workArtist}}</p>
-                            <p><b>Description:</b> {{workDescription}}</p>
+                            <p><b>Artista:</b> {{workArtist}}</p>
+                            <p><b>Descrição:</b> {{workDescription}}</p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
     <hr>
     
     <div class="container content" id="audios">
-        <h3>Audios</h3>
+        <h3>Áudios</h3>
         <div class="row">
             @for(a of audios; track a){
                 @if (a.museum == item.id){
@@ -112,7 +112,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p><b>Transcript:</b> <span [innerHTML]="audioTranscript"></span></p>
+                            <p><b>Transcrição:</b> <span [innerHTML]="audioTranscript"></span></p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
     <hr>
     
     <div class="container content" id="videos">
-        <h3>Videos</h3>
+        <h3>Vídeos</h3>
         <div class="row">
             @for(v of videos; track v){
                 @if (v.museum == item.id){
@@ -151,7 +151,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p><b>Description:</b> <span [innerHTML]="videoDescription"></span></p>
+                            <p><b>Descrição:</b> <span [innerHTML]="videoDescription"></span></p>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
     <div class="container-fluid content-special" id="hours">
         <div class="row">
             <div class="col-6">
-                <h3>Hours</h3>
+                <h3>Horário</h3>
                 <table class="hours-table">
                     <tbody>
                         @for (h of hours; track h){
@@ -171,25 +171,25 @@
                             <tr>
                                 @switch (h.day){
                                     @case (1){
-                                        <td><b>Sunday:</b></td>                                        
+                                        <td><b>Domingo:</b></td>                                        
                                     }
                                     @case (2){
-                                        <td><b>Monday:</b></td>                                        
+                                        <td><b>Segunda-feira:</b></td>                                        
                                     }
                                     @case (3){
-                                        <td><b>Tuesday:</b></td>                                        
+                                        <td><b>Terça-feira:</b></td>                                        
                                     }
                                     @case (4){
-                                        <td><b>Wednesday:</b></td>                                        
+                                        <td><b>Quarta-feira:</b></td>                                        
                                     }
                                     @case (5){
-                                        <td><b>Thursday:</b></td>                                        
+                                        <td><b>Quinta-feira:</b></td>                                        
                                     }
                                     @case (6){
-                                        <td><b>Friday:</b></td>                                        
+                                        <td><b>Sexta-feira:</b></td>                                        
                                     }
                                     @case (7){
-                                        <td><b>Saturday:</b></td>                                        
+                                        <td><b>Sábado:</b></td>                                        
                                     }
                                 }
                                 <td>{{h.opens}} <span><i class="bi bi-arrow-right"></i></span> {{h.closes}}</td>
@@ -200,7 +200,7 @@
                   </table>
             </div>
             <div class="col-6">
-                <h3>Address</h3>
+                <h3>Morada</h3>
                 <div id="map" style="height: 400px; width: 100%;"></div>
             </div>
         </div>
@@ -208,11 +208,11 @@
 }
 @else {    
     <div class="language-option">
-        <img src="../../assets/images/flags/us.svg" title="Change Language / Alterar Idioma" id="languageFlag" (click)="changeLanguage()">
+        <img src="../../../assets/images/flags/pt.svg" title="Change Language / Alterar Idioma" id="languageFlag" (click)="changeLanguage()">
     </div>
     <div class="container-fluid p-5 text-center content" style="height: 86.3%;">
-        <h1>Something went wrong</h1>
-        <p>We couldn't load the page you were looking for.</p> 
-        <p>Please return to the home page and try again.</p> 
+        <h1>Aconteceu algo inesperado</h1>
+        <p>Não foi possível abrir a página desejada.</p> 
+        <p>Por favor volte à página inicial e tente novamente.</p> 
     </div>
 }
