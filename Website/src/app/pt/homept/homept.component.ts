@@ -11,10 +11,12 @@ import { Router } from '@angular/router';
 export class HomeptComponent {
   
   museums = [
-    { id: 1, title: 'Louvre', imagesrc:'../../../assets/images/museuLouvre.jpg' }, 
-    { id: 4, title: 'Prado', imagesrc:'../../../assets/images/MuseuDoPrado.jpg' }, 
-    { id: 2, title: 'Coches', imagesrc:'../../../assets/images/MuseuDosCoches.jpg' },
-    { id: 3, title:  'Vaticano', imagesrc:'../../../assets/images/MuseuDoVaticano.jpg'}
+    { id: 1, title: 'Museu do Louvre', imagesrc:'../../../assets/images/museuLouvre.jpg' }, 
+    { id: 4, title: 'Museu do Prado', imagesrc:'../../../assets/images/MuseuDoPrado.jpg' }, 
+    { id: 2, title: 'Museu dos Coches', imagesrc:'../../../assets/images/MuseuDosCoches.jpg' },
+    { id: 3, title:  'Museu do Vaticano', imagesrc:'../../../assets/images/MuseuDoVaticano.jpg'},
+    { id: 5, title: 'Museu de Arte Moderna', imagesrc: '../../../assets/images/MuseuArteModerna.png'},
+    { id: 6, title: 'Museu Nacional da China', imagesrc: '../../../assets/images/MuseuDaChina.png'},
   ];
 
   constructor(private router: Router) {}
