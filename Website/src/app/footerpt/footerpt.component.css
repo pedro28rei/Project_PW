@@ -30,6 +30,7 @@
 .footer {
     background-color: white;
     border: 1px #0D1321 solid;
+    border-bottom: 0px;
 }
 
 .footer-option {
