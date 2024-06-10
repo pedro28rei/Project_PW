@@ -53,64 +53,231 @@ export class MuseumptComponent implements OnInit {
 
   ]
 
-  works = [
-    /* Museu do Louvre */
-{ id: 1, museum: 1, title:'Mona Lisa', imagesrc:'../../../assets/images/monalisa.webp', artist: 'Leonardo da Vinci', description: 'A Mona Lisa é um retrato de meio corpo pintado pelo artista italiano Leonardo da Vinci. Considerada uma obra-prima arquetípica do Renascimento Italiano, foi descrita como "a obra de arte mais conhecida, a mais visitada, a mais escrita, a mais cantada, [e] a mais parodiada do mundo".' },
-{ id: 2, museum: 1, title:'A Liberdade Guiando o Povo', imagesrc:'../../../assets/images/La_Liberté_guidant_le_peuple.jpg', artist: 'Eugène Delacroix', description: 'A Liberdade Guiando o Povo é uma pintura da era Romântica do artista francês Eugène Delacroix, que comemora a Revolução de Julho de 1830 que derrubou o rei Carlos X.' },
-{ id: 3, museum: 1, title:'Vénus de Milo', imagesrc:'../../../assets/images/venusdemilo,jpg', artist:'Alexandre de Antioquia', description:'Uma escultura grega antiga que representa a deusa do amor e da beleza, é uma das esculturas mais famosas do mundo clássico.' },
-{ id:4, museum: 1, title: 'Vitória de Samotrácia', imagesrc:'../../../assets/images/VitóriadeSamotrácia.jpg', artist:'desconhecida', description:'Esta escultura em mármore representa a deusa grega Nike, personificação da vitória, e é uma das obras mais impressionantes da arte helénica.' },
-{ id:5, museum: 1, title: 'A Escola de Atenas de Rafael', imagesrc:'../../../assets/images/AEscoladeAtenasdeRafael,jpg', artist:'Rafael', description:'Esta famosa pintura renascentista retrata os maiores filósofos da Grécia Antiga reunidos num cenário monumental, simbolizando o conhecimento e a sabedoria.' },
-{ id:6, museum: 1, title:'O Código de Hamurábi', imagesrc:'../../../assets/images/OCódigodeHamurábi.jpg', artist:'Hamurabi', description:'Um conjunto antigo de leis inscrito numa estela de pedra, é uma das formas mais antigas de legislação conhecida e oferece insights sobre a civilização mesopotâmica.' },
-{ id:7, museum: 1, title:'Grande Esfinge de Tanis', imagesrc:'../../../assets/images/GrandeEsfingedeTanis.jpg', artist:'desconhecido', description:'Esta escultura colossal representa um dos símbolos mais reconhecíveis do Antigo Egito e é uma das maiores esfinges preservadas.' },
-
-/* Museu dos Coches */
-{ id: 9, museum: 2, title:'Carruagem de D. João V', imagesrc:'../../../assets/images/Carruagem de D. João V.jpg', description:'Uma obra-prima do estilo Barroco, esta carruagem é ricamente ornamentada com detalhes dourados e carvings exuberantes, representando o auge do luxo no século XVIII.' },
-{ id:10, museum: 2, title:'Carruagem da Coroa', imagesrc:'../../../assets/images/Carruagem da Coroa.jpg', description:'Uma das peças mais imponentes do museu, esta carruagem foi encomendada pelo rei João VI e está adornada com símbolos da monarquia portuguesa, incluindo a coroa real e o brasão de armas.' },
-{ id:11, museum: 2, title:'Berlinda da Rainha D. Maria Pia', imagesrc:'../../../assets/images/Berlinda da Rainha D. Maria Pia.jpg', description:'Esta elegante carruagem foi utilizada pela Rainha Maria Pia, esposa do rei Luís I, e destaca-se pela sua sofisticação e detalhes delicados.' },
-{ id:12, museum: 2, title:'Carruagem de Gala de D. Maria II', imagesrc:'../../../assets/images/Carruagem de Gala de D. Maria II.jpg', description:'Uma peça deslumbrante que reflete o estilo neoclássico do século XIX, esta carruagem foi utilizada em ocasiões cerimoniais pela Rainha Maria II.' },
-{ id:13, museum: 2, title:'Carruagem de D. Carlos I', imagesrc:'../../../assets/images/Carruagem de D. Carlos I.jpg', description:'Esta carruagem, utilizada pelo último rei de Portugal, é um exemplo impressionante do design e engenharia do final do século XIX, com detalhes requintados e uma aparência majestosa.' },
-{ id:14, museum: 2, title:'Carruagem de D. Fernando II', imagesrc:'../../../assets/images/Carruagem de D. Fernando II.jpg', description:'Encomendada pelo rei Fernando II, esta carruagem destaca-se pelo seu design elegante e pela sua associação com o romantismo do século XIX.' },
-{ id:15, museum: 2, title:'Carruagem da Princesa D. Isabel Maria', imagesrc:'../../../assets/images/Carruagem da Princesa D. Isabel Maria.jpg', description:'Utilizada pela Princesa Isabel Maria, esta carruagem é um exemplo notável do estilo Rococó, com curvas graciosas e decorações elaboradas.' },
-
-/* Museu do Vaticano */
-{ id: 16, museum: 3, title:'Teto da Capela Sistina por Michelangelo', imagesrc:'../../../assets/images/TetoCapela.jpg', description:'Uma das obras de arte mais famosas do mundo, o teto da Capela Sistina apresenta uma série de espetaculares frescos que retratam cenas do Génesis, incluindo a famosa criação de Adão.' },
-{ id: 17, museum: 3, title:'Juízo Final por Michelangelo', imagesrc:'../../../assets/images/JuizoFinal.jpg', description:'Localizado na parede atrás do altar da Capela Sistina, este gigantesco fresco retrata o Juízo Final e é uma das obras mais impressionantes e controversas de Michelangelo.' },
-{ id: 18, museum: 3, title:'Esfera Armilar e Muralha de Areia de Belvedere', imagesrc:'../../../assets/images/Esfera Armilar', description:'Esculturas antigas que remontam à Roma Antiga, estas obras representam a habilidade artística dos escultores da época e são exemplos impressionantes da arte clássica.' },
-{ id: 19, museum: 3, title:'Afrescos nos Apartamentos de Rafael', imagesrc:'../../../assets/images/Afrescos', description:'Os frescos pintados por Rafael e sua equipa nos Apartamentos de Rafael retratam cenas da vida papal e são considerados algumas das melhores obras do mestre renascentista.' },
-{ id: 20, museum: 3, title:'Escadaria de Bramante', imagesrc:'../../../assets/images/EscadariaBramante', description:'Uma obra-prima da arquitetura renascentista, esta escadaria em espiral foi desenhada por Donato Bramante e é um dos elementos arquitetónicos mais belos do museu.' },
-{ id: 21, museum: 3, title:'Pinacoteca Vaticana', imagesrc:'../../../assets/images/PinacotecaVaticana', description:'Esta galeria abriga uma coleção de pinturas renascentistas e barrocas de artistas como Rafael, Caravaggio, Leonardo da Vinci e Ticiano, oferecendo uma visão abrangente da arte italiana.' },
-{ id: 22, museum: 3, title:'Laocoonte e Seus Filhos', imagesrc:'../../../assets/images/LaocoonteeFilhos', description:'Uma escultura grega antiga que retrata o sacerdote troiano Laocoonte e seus filhos sendo atacados por serpentes é uma das obras mais famosas da escultura clássica.' },
-
-/* Museu do Prado */
-{ id: 23, museum: 4, title:'As Meninas', imagesrc:'../../../assets/images/AsMeninas', author:'Diego Velázquez', description:'Uma das pinturas mais famosas do mundo, este retrato complexo e intrigante é uma obra-prima do século XVII e um símbolo do génio de Velázquez.' },
-{ id: 24, museum: 4, title:'O 3 de Maio de 1808 em Madrid', imagesrc:'../../../assets/images/O3deMaiode1808emMadrid', author:'Francisco de Goya', description:'Esta pintura monumental retrata o massacre de cidadãos espanhóis por tropas francesas durante a Guerra Peninsular e é um símbolo poderoso de resistência e patriotismo.' },
-{ id: 25, museum: 4, title:'A Rendição de Breda', imagesrc:'../../../assets/images/ARendiçãodeBreda', author:'Diego Velázquez', description:'Também conhecida como "As Lanças", esta pintura histórica retrata a rendição da cidade de Breda durante a Guerra dos Oitenta Anos e é uma das obras mais importantes de Velázquez.' },
-{ id: 26, museum: 4, title:'A Maja Despida', imagesrc:'../../../assets/images/AMajaDespida',author:'Francisco de Goya', description:'Este retrato nu, que gerou controvérsia na época de sua criação, é uma das obras mais sensuais e intrigantes do Museu do Prado.' },
-{ id: 27, museum: 4, title:'O Jardim das Delícias Terrenas', imagesrc:'../../../assets/images/OJardimdasDelíciasTerrenas',author:'Hieronymus Bosch', description:'Este tríptico surrealista é uma representação vívida do céu, terra e inferno, cheio de simbolismo e imaginação.' },
-{ id: 28, museum: 4, title:'O Lavrador de Parma', imagesrc:'../../../assets/images/OLavradordeParma', author:'Giuseppe Arcimboldo', description:'Esta obra única retrata um rosto humano composto por uma variedade de frutas, vegetais e flores, demonstrando a habilidade e criatividade de Arcimboldo.' },
-{ id: 29, museum: 4, title:'A Anunciação', imagesrc:'../../../assets/images/AAnunciação', author:'Fra Angelico', description:'Este belo fresco renascentista retrata o momento em que o anjo Gabriel anuncia à Virgem Maria que ela dará à luz Jesus, capturando a serenidade e a reverência do evento.' }
-];
+   works = [
+    // Museu do Louvre
+    { 
+      id: 1, 
+      museum: 1, 
+      title: 'Mona Lisa', 
+      imagesrc: '../../../assets/images/monalisa.webp', 
+      artist: 'Leonardo da Vinci', 
+      description: 'A Mona Lisa é um retrato de meio corpo pintado pelo artista italiano Leonardo da Vinci. Considerada uma obra-prima arquetípica do Renascimento italiano, foi descrita como "a obra de arte mais conhecida, mais visitada, mais escrita, mais cantada e mais parodiada do mundo".' 
+    },
+    { 
+      id: 2, 
+      museum: 1, 
+      title: 'A Liberdade Guiando o Povo', 
+      imagesrc: '../../../assets/images/La_Liberté_guidant_le_peuple.jpg', 
+      artist: 'Eugène Delacroix', 
+      description: 'A Liberdade Guiando o Povo é uma pintura do Romantismo do artista francês Eugène Delacroix, comemorando a Revolução de Julho de 1830 que derrubou o Rei Carlos X.' 
+    },
+    { 
+      id: 3, 
+      museum: 1, 
+      title: 'Vénus de Milo', 
+      imagesrc: '../../../assets/images/venusdemilo.jpg', 
+      artist: 'Alexandre de Antioquia', 
+      description: 'Uma escultura grega antiga que representa a deusa do amor e da beleza, é uma das esculturas mais famosas do mundo clássico.' 
+    },
+    { 
+      id: 4, 
+      museum: 1, 
+      title: 'Vitória de Samotrácia', 
+      imagesrc: '../../../assets/images/vitoriasamotracia.jpg', 
+      artist: 'Desconhecida', 
+      description: 'Esta escultura de mármore representa a deusa grega Nike, personificação da vitória, e é uma das obras mais impressionantes da arte helénica.' 
+    },
+    { 
+      id: 5, 
+      museum: 1, 
+      title: 'A Escola de Atenas de Rafael', 
+      imagesrc: '../../../assets/images/escoladeantesrafael.jpg', 
+      artist: 'Rafael', 
+      description: 'Esta famosa pintura renascentista retrata os maiores filósofos da Grécia Antiga reunidos num cenário monumental, simbolizando conhecimento e sabedoria.' 
+    },
+    { 
+      id: 6, 
+      museum: 1, 
+      title: 'O Código de Hamurábi', 
+      imagesrc: '../../../assets/images/CodigoHamurábico.jpg', 
+      artist: 'Hamurabi', 
+      description: 'Um antigo conjunto de leis inscritas numa estela de pedra, é uma das formas de legislação mais antigas conhecidas e oferece insights sobre a civilização mesopotâmica.' 
+    },
+    { 
+      id: 7, 
+      museum: 1, 
+      title: 'Grande Esfinge de Tânis', 
+      imagesrc: '../../../assets/images/GrandeEsfingeTanis.jpg', 
+      artist: 'Desconhecido', 
+      description: 'Esta colossal escultura representa um dos símbolos mais reconhecíveis do Antigo Egito e é uma das maiores esfinges preservadas.' 
+    },
+  
+    // Museu dos Coches
+    { 
+      id: 9, 
+      museum: 2, 
+      title: 'Carruagem de D. João V', 
+      imagesrc: '../../../assets/images/carruagemDJOAOV.jpg', 
+      description: 'Uma obra-prima do estilo Barroco, esta carruagem é ricamente ornamentada com detalhes dourados e exuberantes entalhes, representando o auge do luxo no século XVIII.' 
+    },
+    { 
+      id: 10, 
+      museum: 2, 
+      title: 'Carruagem da Coroa', 
+      imagesrc: '../../../assets/images/CarruagemCoroa.jpg', 
+      description: 'Uma das peças mais imponentes do museu, esta carruagem foi encomendada pelo Rei João VI e está adornada com símbolos da monarquia portuguesa, incluindo a coroa real e o brasão de armas.' 
+    },
+    { 
+      id: 11, 
+      museum: 2, 
+      title: 'Berlinda da Rainha D. Maria Pia', 
+      imagesrc: '../../../assets/images/BerlindaRainhaDMariaPia.jpg', 
+      description: 'Esta elegante carruagem foi usada pela Rainha Maria Pia, esposa do Rei Luís I, e destaca-se pela sua sofisticação e detalhes delicados.' 
+    },
+    { 
+      id: 12, 
+      museum: 2, 
+      title: 'Carruagem de Gala de D. Maria II', 
+      imagesrc: '../../../assets/images/CarruagemGalaMariaII.jpg', 
+      description: 'Uma peça deslumbrante que reflete o estilo neoclássico do século XIX, esta carruagem foi usada em ocasiões cerimoniais pela Rainha Maria II.' 
+    },
+    { 
+      id: 14, 
+      museum: 2, 
+      title: 'Carruagem de D. Fernando II', 
+      imagesrc: '../../../assets/images/CarruagemDFernandoII.jpg', 
+      description: 'Encomendada pelo Rei Fernando II, esta carruagem destaca-se pelo seu design elegante e pela sua associação com o romantismo do século XIX.' 
+    },
+    { 
+      id: 15, 
+      museum: 2, 
+      title: 'Carruagem da Princesa D. Isabel Maria', 
+      imagesrc: '../../../assets/images/CarruagemPricnesaIsabel.jpg', 
+      description: 'Usada pela Princesa Isabel Maria, esta carruagem é um exemplo notável do estilo Rococó, com curvas graciosas e decorações elaboradas.' 
+    },
+  
+    // Museu do Vaticano
+    { 
+      id: 16, 
+      museum: 3, 
+      title: 'Teto da Capela Sistina por Michelangelo', 
+      imagesrc: '../../../assets/images/tetocapela.jpg', 
+      description: 'Uma das obras de arte mais famosas do mundo, o teto da Capela Sistina apresenta uma série de espetaculares frescos que retratam cenas do Gênesis, incluindo a famosa criação de Adão.' 
+    },
+    { 
+      id: 17, 
+      museum: 3, 
+      title: 'Juízo Final por Michelangelo', 
+      imagesrc: '../../../assets/images/JuizoFinal.jpg', 
+      description: 'Localizado na parede atrás do altar da Capela Sistina, este gigantesco fresco retrata o Juízo Final e é uma das obras mais impressionantes e controversas de Michelangelo.' 
+    },
+    { 
+      id: 18, 
+      museum: 3, 
+      title: 'Esfera Armilar e Muralha de Areia de Belvedere', 
+      imagesrc: '../../../assets/images/Esfera Armilar e Muralha de Areia de Belvedere.jpg', 
+      description: 'Esculturas antigas que datam da Roma Antiga, estas obras representam a habilidade artística dos escultores da época e são impressionantes exemplos da arte clássica.' 
+    },
+    { 
+      id: 19, 
+      museum: 3, 
+      title: 'Afrescos nos Apartamentos de Rafael', 
+      imagesrc: '../../../assets/images/Afrescos nos Apartamentos de Rafael.jpg', 
+      description: 'Os frescos pintados por Rafael e sua equipa nos Apartamentos de Rafael retratam cenas da vida papal e são considerados algumas das melhores obras do mestre renascentista.' 
+    },
+    { 
+      id: 20, 
+      museum: 3, 
+      title: 'Escadaria de Bramante', 
+      imagesrc: '../../../assets/images/EscadariaBramante.jpg', 
+      description: 'Uma obra-prima da arquitetura renascentista, esta escadaria em espiral foi desenhada por Donato Bramante e é uma das características arquitetónicas mais belas do museu.' 
+    },
+    { 
+      id: 21, 
+      museum: 3, 
+      title: 'Pinacoteca Vaticana', 
+      imagesrc: '../../../assets/images/PinacotecaVaticana.jpg', 
+      description: 'Esta galeria abriga uma coleção de pinturas renascentistas e barrocas de artistas como Rafael, Caravaggio, Leonardo da Vinci e Ticiano, oferecendo uma visão abrangente da arte italiana.' 
+    },
+  
+    // Museu do Prado
+    { 
+      id: 23, 
+      museum: 4, 
+      title: 'As Meninas', 
+      imagesrc: '../../../assets/images/AsMeninas.jpg', 
+      author: 'Diego Velázquez', 
+      description: 'Uma das pinturas mais famosas do mundo, este retrato complexo e intrigante é uma obra-prima do século XVII e um símbolo do génio de Velázquez.' 
+    },
+    { 
+      id: 24, 
+      museum: 4, 
+      title: 'O 3 de Maio de 1808 em Madrid', 
+      imagesrc: '../../../assets/images/O3deMaiode1808emMadrid.jpg', 
+      author: 'Francisco de Goya', 
+      description: 'Esta monumental pintura retrata o massacre de cidadãos espanhóis por tropas francesas durante a Guerra Peninsular e é um poderoso símbolo de resistência e patriotismo.' 
+    },
+    { 
+      id: 25, 
+      museum: 4, 
+      title: 'A Rendição de Breda', 
+      imagesrc: '../../../assets/images/A Rendição de Breda.jpg', 
+      author: 'Diego Velázquez', 
+      description: 'Também conhecida como "As Lanças", esta pintura histórica retrata a rendição da cidade de Breda durante a Guerra dos Oitenta Anos e é uma das obras mais importantes de Velázquez.' 
+    },
+    { 
+      id: 26, 
+      museum: 4, 
+      title: 'A Maja Despida', 
+      imagesrc: '../../../assets/images/AMajaDespida.jpg', 
+      author: 'Francisco de Goya', 
+      description: 'Este retrato nu, que gerou controvérsia na época da sua criação, é uma das obras mais sensuais e intrigantes do Museu do Prado.' 
+    },
+    { 
+      id: 28, 
+      museum: 4, 
+      title: 'O Lavrador de Parma', 
+      imagesrc: '../../../assets/images/O Lavrador de Parma.jpg', 
+      author: 'Giuseppe Arcimboldo', 
+      description: 'Esta obra única retrata um rosto humano composto por uma variedade de frutas, legumes e flores, demonstrando a habilidade e criatividade de Arcimboldo.' 
+    },
+    { 
+      id: 29, 
+      museum: 4, 
+      title: 'A Anunciação', 
+      imagesrc: '../../../assets/images/AAnunciação.jpg', 
+      author: 'Fra Angelico', 
+      description: 'Este belo fresco renascentista retrata o momento em que o anjo Gabriel anuncia à Virgem Maria que ela dará à luz Jesus, capturando a serenidade e a reverência do evento.' 
+    }
+  ];
+  
   workImageSrc: string | undefined;
   workTitle: string | undefined;
   workArtist: string | undefined;
   workDescription: string | undefined;
 
-  audios = [
-    { id: 1, museum: 1, title:'Louvre', transcript: 'Exemplo 1', src:'<source src="../../../assets/audios/audiolouvre.mp3">'},
-    { id: 2, museum: 3, title:'Vaticano', transcript: 'Exemplo 2', src:'<source src="../../../assets/audios/audiovaticano.mp3">'},
-    { id: 3, museum: 4, title:'Prado', transcript: 'Exemplo 3', src:'<source src="../../../assets/audios/audioprado.mp3">'}
+  audios = 
+  [
+    { id: 1, museum: 1, title:'Louvre', src:'<source src="../../assets/audios/audiolouvre.mp3">'},
+    { id: 2, museum: 3, title:'Vaticano', src:'<source src="../../assets/audios/audiovaticano.mp3">'},
+    { id: 3, museum: 4, title:'Prado', src:'<source src="../../assets/audios/audioprado.mp3">'}
   ]
 
   audioTitle: string | undefined;
   audioSrc: string | undefined;
   audioTranscript: string | undefined;
 
-  videos = [
-    { id: 1, museum: 1, title:'Fernando Mendes', src:'<source src="../../../../assets/videos/FernandoMendes.mp4">', thumbnail:'../../../assets/images/FernandoMendes.png', transcript: 'Espetáculo'}
+  videos = 
+  [
+    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../../assets/videos/videolouvre.mp4">', thumbnail:'../../../assets/images/museulouvre.png', transcript: 'Museu do Louvre'},
+    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../../assets/videos/videocoches.mp4">', thumbnail:'../../../assets/images/MuseuDosCoches.png', transcript: 'Museu Dos Coches'},
+    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../../assets/videos/videovaticano.mp4">', thumbnail:'../../../assets/images/MuseuDoVaticano.png', transcript: 'Museu do Vaticano'},
+    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../../assets/videos/videoprado.mp4">', thumbnail:'../../../assets/images/MuseuDoPrado.png', transcript: 'Museu do Prado'}
   ]
   videoTitle: string | undefined;
   videoSrc: string | undefined;
   videoDescription: string | undefined;
+
 
   constructor(
     private route: ActivatedRoute,
@@ -168,7 +335,6 @@ export class MuseumptComponent implements OnInit {
     if (selectedAudio) {
       this.audioTitle = selectedAudio.title;
       this.audioSrc = selectedAudio.src;
-      this.audioTranscript = selectedAudio.transcript;
       const modalElement = document.getElementById('audioModal');
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
