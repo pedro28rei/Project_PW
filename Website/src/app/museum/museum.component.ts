@@ -102,15 +102,18 @@ export class MuseumComponent implements OnInit {
 
   audios = [
     { id: 1, museum: 1, title:'Louvre', src:'<source src="../../assets/audios/audiolouvre.mp3">'},
-    { id: 1, museum: 3, title:'Vaticano', src:'<source src="../../assets/audios/audiovaticano.mp3">'},
-    { id: 1, museum: 4, title:'Prado', src:'<source src="../../assets/audios/audioprado.mp3">'}
+    { id: 2, museum: 3, title:'Vaticano', src:'<source src="../../assets/audios/audiovaticano.mp3">'},
+    { id: 3, museum: 4, title:'Prado', src:'<source src="../../assets/audios/audioprado.mp3">'}
   ]
   audioTitle: string | undefined;
   audioSrc: string | undefined;
   audioTranscript: string | undefined;
 
   videos = [
-    { id: 1, museum: 1, title:'Fernando Mendes', src:'<source src="../../assets/videos/FernandoMendes.mp4">', thumbnail:'../../assets/images/FernandoMendes.png', transcript: 'Espetáculo'}
+    { id: 1, museum: 1, title:'Muoseu louvre', src:'<source src="../../assets/videos/videolouvre.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museulouvre'},
+    { id: 2, museum: 2, title:'Museu Coches', src:'<source src="../../assets/videos/videocoches.mp4">', thumbnail:'../../assets/images/museucoches.png', transcript: 'museucoches'},
+    { id: 3, museum: 3, title:'Museu  Vatiadno', src:'<source src="../../assets/videos/videovaticano.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museuvaticano'},
+    { id: 4, museum: 4, title:'Museu  Prado', src:'<source src="../../assets/videos/videoprado.mp4">', thumbnail:'../../assets/images/museulouvre.png', transcript: 'museuprado'}
   ]
   videoTitle: string | undefined;
   videoSrc: string | undefined;
@@ -172,7 +175,6 @@ export class MuseumComponent implements OnInit {
     if (selectedAudio) {
       this.audioTitle = selectedAudio.title;
       this.audioSrc = selectedAudio.src;
-      this.audioTranscript = selectedAudio.transcript;
       const modalElement = document.getElementById('audioModal');
       const modal = new bootstrap.Modal(modalElement);
       modal.show();
