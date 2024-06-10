@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 body, html {
-    height: 97.6%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 body{
     background-color: #6eab99 !important;
+}
+html {
+    overflow: hidden;
 }
 
 .pointer {

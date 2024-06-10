@@ -11,6 +11,46 @@
             </div>
           </div>
     </div>
+<!--
+    <div class="row nav">
+        <div class="col-1 nav-option"></div>
+        <div class="col-1 pointer nav-option" (click)="scrollToDiv('content')">
+            <p class="nav-text">Description</p>
+        </div>
+        <div class="col-1 pointer nav-option" (click)="scrollToDiv('works')">
+            <p class="nav-text">Works</p>
+        </div>
+        <div class="col-1 pointer nav-option" (click)="scrollToDiv('hours')">
+            <p class="nav-text">Hours</p>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-1 pointer nav-option-special bg-warning">Tickets</div>
+        <div class="col-1"></div>
+    </div>
+-->
+  <div class="container-fluid nav">
+    <div class="col-1 nav-option"></div>
+    <div class="col-1 pointer nav-option" (click)="scrollToDiv('content')">
+        <p class="nav-text">Description</p>
+    </div>
+    <div class="col-1 pointer nav-option" (click)="scrollToDiv('works')">
+        <p class="nav-text">Catalog</p>
+    </div>
+    <div class="col-1 pointer nav-option" (click)="scrollToDiv('audios')">
+        <p class="nav-text">Audios</p>
+    </div>
+    <div class="col-1 pointer nav-option" (click)="scrollToDiv('videos')">
+        <p class="nav-text">Videos</p>
+    </div>
+    <div class="col-1 pointer nav-option" (click)="scrollToDiv('hours')">
+        <p class="nav-text">Hours</p>
+    </div>
+    <div class="col-4 nav-option"></div>
+    <div class="col-1 pointer nav-option bg-warning">
+        <p id="navigateSupport" class="nav-text">Tickets</p>
+    </div>
+    <div class="col-1"></div>
+  </div>
 
     <div class="container content" id="content">
         <h3>Description</h3>
@@ -137,7 +177,7 @@
     </div>
     
 
-    <div class="container-fluid content-special" id="content">
+    <div class="container-fluid content-special" id="hours">
         <div class="row">
             <div class="col-6">
                 <h3>Hours</h3>

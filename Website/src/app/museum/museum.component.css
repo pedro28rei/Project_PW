@@ -9,7 +9,7 @@
     right: 0;
     width: 30px;
     cursor: pointer;
-    margin: 1% 1% 0 0;
+    margin: 1% 4% 0 0;
     z-index: 2;
 }
 
@@ -94,4 +94,29 @@
 
 .hours-table td{
     padding: 5px;
+}
+
+
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px #0D1321 solid;
+    z-index: 1;
+}
+
+.nav-option {
+    border-right: 1px #0D1321 solid;
+    text-align: center;
+}
+
+.nav-default {
+    text-align: right;
+}
+
+.nav-text {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0;
 }
