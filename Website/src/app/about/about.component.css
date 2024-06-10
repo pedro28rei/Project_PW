@@ -1,0 +1,99 @@
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ffffff;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    border-bottom: 4px solid #011c25;
+  }
+
+  .title-2 {
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #011c25;
+  }
+
+  .header {
+    margin-top: -2%;
+    text-align: justify;
+    margin-bottom: 3%;
+  }
+  
+  
+  .header p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .mission {
+    text-align: justify;
+    margin-bottom: 2%;
+  }
+  
+  .mission p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .team {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    margin-top: -2%;
+    font-size: 1em;
+    color: #777;
+  }
+  
+  .founder {
+    margin-top: -20px;
+  }
